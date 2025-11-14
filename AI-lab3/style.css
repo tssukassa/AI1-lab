@@ -1,0 +1,165 @@
+/* === СБРОС === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background: #f5f6fa;
+  color: #333;
+}
+
+/* === ОБЩИЙ ЛЕЙАУТ === */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Верхняя панель */
+#top-ui {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  background: #ffffff;
+  border-bottom: 1px solid #dcdde1;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  height: 60px;
+}
+
+#coords {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Кнопки */
+button {
+  padding: 8px 16px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 600;
+}
+button:hover {
+  background: #2d74c8;
+}
+
+/* === ГЛАВНЫЙ ЛЕЙАУТ === */
+#layout {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 12px;
+  gap: 12px;
+}
+
+/* Левая и правая колонки */
+#left, #right {
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+  border: 1px solid #e6e6e6;
+}
+
+/* ==== МАПА ==== */
+#map {
+  flex: 1 1 auto;
+  min-height: 0;
+  background: #e3e3e3;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+#stol {
+  background: #fafafa;
+  height: 170px;
+  border-radius: 8px;
+  border: 1px solid #e2e2e2;
+}
+
+/* === ПРАВАЯ ПАНЕЛЬ === */
+#right h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #444;
+  font-weight: 600;
+}
+
+/* Превью */
+#canvasPreview {
+  height: 200px;
+  min-height: 120px;
+  flex: 1 1 auto;
+  background: #f1f2f6;
+  border-radius: 8px;
+  border: 1px solid #dcdde1;
+  margin-bottom: 12px;
+}
+
+/* Сетка */
+#board {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 6px;
+  padding: 6px;
+}
+
+#board div {
+  background: #f0f0f0;
+  border-radius: 6px;
+  border: 1px solid #dedede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4x4 сетка */
+  gap: 6px;
+  width: 100%;
+}
+
+.cell {
+  width: 100%;
+  padding-top: 100%;              /* делает клетку квадратной */
+  background: #eee;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cell img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#stol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.draggableTile {
+  width: calc(25% - 6px);
+  height: auto;
+  border-radius: 6px;
+}
