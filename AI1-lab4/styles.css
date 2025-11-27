@@ -1,4 +1,3 @@
-/* Основные стили */
 * {
     margin: 0;
     padding: 0;
@@ -19,14 +18,12 @@ body {
     background-attachment: fixed; 
 }
 
-/* Заголовок */
 h1 {
     font-size: 2.5rem;
     color: #1e3a8a;
     margin-bottom: 20px;
 }
 
-/* Стили для формы */
 label {
     font-size: 1.2rem;
     margin-right: 10px;
@@ -63,7 +60,6 @@ button:hover {
     background-color: #4c6cbf;
 }
 
-/* Секции погоды */
 #currentWeather,
 #forecast {
     background-color: #ffffff;
@@ -108,7 +104,6 @@ button:hover {
     margin-right: 10px;
 }
 
-/* Мобильные устройства (до 600px) */
 @media (max-width: 600px) {
     body {
         padding: 15px;
@@ -146,7 +141,6 @@ button:hover {
     }
 }
 
-/* Плашки и фоны */
 #currentWeather, #forecast {
     background-color: #ffffff49;
     border-radius: 10px;
