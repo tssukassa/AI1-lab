@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather report</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Weather report</h1>
+    
+    <label for="city">Give a city name:</label>
+    <input type="text" id="city">
+    <button id="getWeatherBtn">Show</button>
+    
+    <div id="currentWeather">
+        <h2>Current weather:</h2>
+        <p id="currentTemp">Temperature: </p>
+        <p id="currentDesc">Description: </p>
+        <div id="currentIcon"></div>
+    </div>
+
+    <div id="forecast">
+        <h2>Weather report for 5 days:</h2>
+        <ul id="forecastList"></ul>
+    </div>
+
+</body>
+</html>
