@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: clamp(12px, 2vw, 18px);
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9f4;
+    color: #333;
+
+    background-image: url("background.jpg"); 
+    background-repeat: no-repeat;  
+    background-size: cover;        
+    background-attachment: fixed; 
+
+  }
+
+  .photo1, .photo2 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(106, 0, 0, 0.6);
+    object-fit: cover;
+  }
+  
+  header, footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  header h1 {
+    margin: 0.2em 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    max-width: 900px;
+    /*margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;*/
+    margin: 2em auto;
+    padding: 2em;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    margin-top: 1.5em;
+    color: #2e7d32;
+    border-bottom: 2px solid #a5d6a7;
+    padding-bottom: 0.3em;
+  }
+  
+  h3 {
+    margin-top: 1em;
+    color: #388e3c;
+  }
+  
+  p {
+    margin: 0.5em 0 1em;
+  }
+  
+  ul {
+    margin: 1em 0;
+    padding-left: 1.5em;
+  }
+  
+  ul li {
+    margin: 0.4em 0;
+  }
+  
+  footer {
+    /*margin-top: 2em;*/
+    font-size: 0.9em;
+  }
+  
+#style-links {
+  text-align: center;
+  margin-top: 2em;
+}
+
+#style-links a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 12px;
+  background-color: #f8f9f4;
+  box-shadow: 0 4px 12px rgba(106, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  margin: 0 1em;
+}
+
+#style-links a:hover {
+  background-color: #388e3c;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+#style-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
