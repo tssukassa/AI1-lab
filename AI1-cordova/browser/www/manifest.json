@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Dmytro 55841",
+  "short_name": "Dmytro 55841",
+  "version": "pl.edu.zut.wi.td55841",
+  "description": "Weather app",
+  "author": "Dmytro Terletskyi",
+  "icons": [],
+  "start_url": "weather.html"
+}
